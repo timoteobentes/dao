@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Table for show database */
+
+.tableBook, .tableUser {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    background: #fff;
+    border-radius: 2em;
+    outline: none;
+    border: none;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, .5);
+}
+
+.tableBook thead tr th,
+.tableUser thead tr th {
+    margin-left: 5em;
+}
+
+/* Menu buttons */
+
+.buttons {
+    display: flex;
+    background: #2b3979;
+    width: 15em;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1em;
+    border-radius: 1em;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, .5);
+
+}
+
+.buttons a {
+    color: #fff;
+    transition: 1s;
+    font-size: 1.5em;
+    background: #2b3979;
+}
+
+.buttons a:hover {
+    color: #00aeff;
+}
+
+/* Image Home => Logo */
+
+.home img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Page Books */
+
+#Books, #Users {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.addBook, .addUser {
+    margin-top: 18em;
+}
+
+.row {
+    width: 50em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    margin-bottom: 5em;
+}
+
+#cadastrar {
+    position: absolute;
+    top: 100%;
+    left: 45%;
+}
