@@ -25,9 +25,9 @@
             $this -> flag         = $row['flag'];
 
         }
-        public function editarFormulario($nome,$autor,$quantidade,$preco,$data,$flag,$id) {
-            if($this -> editar -> updateLivro($nome,$autor,$quantidade,$preco,$flag,$data,$id) == TRUE) {
-                echo "<script>alert('Registro incluído com sucesso!');document.location='../view/index.php'</script>";
+        public function editarFormulario($nome, $autor, $quantidade, $preco, $data, $flag, $id) {
+            if($this -> editar -> updateLivro($nome, $autor, $quantidade, $preco, $flag, $data, $id) == TRUE) {
+                echo "<script>alert('Registro incluído com sucesso!');document.location='../view/tableLivro.php'</script>";
             } else {
                 echo "<script>alert('Erro ao gravar registro!');history.back()</script>";
             }

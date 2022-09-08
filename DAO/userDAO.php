@@ -15,8 +15,8 @@
         }
 
         public function setUser($nome, $login, $senha){
-            $stmt = $this -> mysqli -> prepare("INSERT INTO usuarios (`nome`, `login`, `senha`) VALUES (?,?,?,?,?)");
-            $stmt -> bind_param("sssss", $nome, $login, $senha);
+            $stmt = $this -> mysqli -> prepare("INSERT INTO usuarios (`nome`, `login`, `senha`) VALUES (?,?,?)");
+            $stmt -> bind_param("sss", $nome, $login, $senha);
 
             if( $stmt->execute() == TRUE) {
                 return true ;
@@ -25,7 +25,6 @@
             }
 
         }
-
         public function getuser() {
             $result = $this -> mysqli -> query("SELECT * FROM usuarios");
             $array = array();
@@ -51,8 +50,8 @@
 
         }
         public function updateUser($nome, $login, $senha, $id) {
-            $stmt = $this -> mysqli -> prepare("UPDATE `usuarios` SET `id` = ?, `nome`=?, `login`=?, `login`=? WHERE `nome` = ?");
-            $stmt -> bind_param("sssssss", $id, $nome, $login, $senha);
+            $stmt = $this -> mysqli -> prepare("UPDATE `usuarios` SET `nome`=?, `login`=?, `senha`=? WHERE `nome` = ?");
+            $stmt -> bind_param("ssss", $nome, $login, $senha, $id);
             if($stmt -> execute() == TRUE) {
                 return true;
             } else {

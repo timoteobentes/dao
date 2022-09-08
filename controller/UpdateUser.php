@@ -20,7 +20,7 @@
         }
         public function editarFormulario($nome, $login, $senha, $id) {
             if($this -> editar -> updateUser($nome, $login, $senha, $id) == TRUE) {
-                echo "<script>alert('Registro incluído com sucesso!');document.location='../view/index.php'</script>";
+                echo "<script>alert('Registro incluído com sucesso!');document.location='../view/tableUser.php'</script>";
             } else {
                 echo "<script>alert('Erro ao gravar registro!');history.back()</script>";
             }

@@ -8,7 +8,7 @@ class DeleteLivro {
         $this -> DeleteLivro = new livrosDAO();
 
         if($this -> DeleteLivro -> deleteLivro($id)== TRUE) {
-            echo "<script>alert('Registro deletado com sucesso!');document.location='../view/index.php'</script>";
+            echo "<script>alert('Registro deletado com sucesso!');document.location='../view/tableLivro.php'</script>";
         } else {
             echo "<script>alert('Erro ao deletar registro!');history.back()</script>";
         }

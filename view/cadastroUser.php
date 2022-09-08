@@ -10,7 +10,7 @@
         </div>
         <form method="post" action="../controller/InsertUser.php" id="form" name="form" onsubmit="validar(document.form); return false;" class="col-10">
             <div class="form-group">
-                <input class="form-control" type="text" id="nome" name="nome" placeholder="Nome do Livro" required autofocus>
+                <input class="form-control" type="text" id="nome" name="nome" placeholder="Nome do Usuário" required autofocus>
                 <input class="form-control" type="text" id="login" name="login" placeholder="Login" required>
                 <input class="form-control" type="text" id="senha" name="senha" placeholder="Senha" required>
             </div>

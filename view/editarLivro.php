@@ -25,7 +25,8 @@
             </div>
         </form>
     </div>
-      <script language="javascript" type="text/javascript">
+    
+    <script language="javascript" type="text/javascript">
         function formatarMoeda() {
             var elemento = document.getElementById('preco');
             var valor = preco.value;

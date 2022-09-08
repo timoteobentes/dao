@@ -11,8 +11,8 @@
 
         private function insert() {
             $this -> userVO -> setNome($_POST['nome']);
-            $this -> userVO -> setLogin($_POST['autor']);
-            $this -> userVO -> setSenha($_POST['quantidade']);
+            $this -> userVO -> setLogin($_POST['login']);
+            $this -> userVO -> setSenha($_POST['senha']);
             $result = $this -> userVO -> insert();
             if($result >= 1) {
                 echo "<script>alert('Registro incluído com sucesso!');document.location='../view/cadastroUser.php'</script>";
