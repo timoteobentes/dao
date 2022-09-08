@@ -9,6 +9,7 @@
     <?php include("menu.php"); ?>
 
     <div class="Users">
+        <h1>Tabela de Usuários</h1>
         <table class="table table-hover tableUser">
             <thead>
                 <tr>
